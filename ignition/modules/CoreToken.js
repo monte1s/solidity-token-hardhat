@@ -13,7 +13,7 @@ module.exports = buildModule("CoreTokenModule", (m) => {
     "0x..."
   );
 
-  const lock = m.contract("CoreToken", [_admin, _coreTreasury]);
+  const coreToken = m.contract("CoreToken", [_admin, _coreTreasury]);
 
-  return { lock };
+  return { coreToken };
 });
